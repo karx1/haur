@@ -1,6 +1,6 @@
 # haur
 
-[![Build Status](https://travis-ci.com/karx1/haur.svg?branch=master)](https://travis-ci.com/karx1/haur) [![AUR version](https://img.shields.io/aur/version/haur)](https://aur.archlinux.org/packages/haur)
+[![Build Status](https://travis-ci.com/karx1/haur.svg?branch=master)](https://travis-ci.com/karx1/haur) [![AUR version](https://img.shields.io/aur/version/haur)](https://aur.archlinux.org/packages/haur) [![Actions Status](https://github.com/karx1/haur/workflows/shellcheck/badge.svg)](https://github.com/karx1/haur/actions)
 
 *H*elper for the *A*rch *U*ser *R*epository
 
