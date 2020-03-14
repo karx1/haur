@@ -1,12 +1,17 @@
 version: ~> 1.0
 language: bash
 script:
-  - "travis_wait 30 sleep 1800 &"
-  - curl -s "https://raw.githubusercontent.com/fossasia/arch-travis/master/arch-travis.sh" | bash
-arch:
+  - "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
+services:
+  - docker
+archlinux:
   packages:
     - bash
     - git
-    - archiso
+  mount:
+    - ~/.pkg-cache:/var/cache/pacman/pkg
+  before_install:
+    - "sudo ln -s /dev/null /etc/pacman.d/hooks/package-cleanup.hook"
   script:
-    - bash test.sh
+    - "bash test.sh"
+
