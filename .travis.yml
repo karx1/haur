@@ -10,8 +10,6 @@ archlinux:
     - git
   mount:
     - ~/.pkg-cache:/var/cache/pacman/pkg
-  before_install:
-    - "sudo ln -s /dev/null /etc/pacman.d/hooks/package-cleanup.hook"
   script:
     - "bash test.sh"
 
