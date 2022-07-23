@@ -24,7 +24,7 @@ haur <package names>
 
 To search for a package:
 ```bash
-haur <package names>
+haur -s <package names>
 ```
 
 To upgrade a package:
